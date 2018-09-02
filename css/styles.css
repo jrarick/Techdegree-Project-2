@@ -1,0 +1,221 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Raleway';
+  color: black;
+  background: white;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #a366ff;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: darkgrey;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+}
+
+h1,
+h2 {
+  margin-bottom: 40px;
+}
+
+/* Navigation Styles */
+
+#main-nav {
+  font-weight: bold;
+  padding: 20px 5%;
+  background: #f5f5f5;
+  display: flex;
+  flex-flow: column;
+}
+
+#nav-link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  background: white;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Intro Styles */
+
+#intro {
+  background: #f5f5f5;
+  padding: 0 5% 50px 5%;
+}
+
+.profile-image{
+  width: 40%;
+  height: auto;
+  border-radius: 25%;
+}
+
+/* Portfolio Styles */
+
+#portfolio {
+  padding: 0 5%;
+}
+
+#cards {
+  display: flex;
+  flex-flow: column;
+}
+
+.portfolio-image {
+  max-width: 100%;
+}
+
+hr {
+  margin: 40px 5% 30px;
+}
+
+/* Skills Styles*/
+
+#skills {
+  margin: 0 5%;
+  background: #ecf7f9;
+  color: green;
+  padding-bottom: 10px;
+  font-family: 'Roboto Mono';
+}
+
+/* Contact Styles */
+
+#contact {
+  margin: 40px 5% 0;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+/* Footer Styles */
+
+footer {
+  font-weight: bold;
+}
+
+.desktop-sub-nav {
+  display: none;
+}
+
+#name-footer {
+  float: left;
+  padding: 0 0 30px 30px;
+}
+
+.mobile-sub-nav {
+  float: right;
+  margin: 0 30px 30px 0;
+}
+
+
+
+/*---------- Tablet Styles ----------*/
+
+@media (min-width: 768px) {
+
+/* Nav */
+
+  #main-nav {
+    padding-bottom: 50px;
+  }
+
+  #nav-link-container {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 20%;
+  }
+
+/* Intro */
+
+  #intro {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .profile-image {
+    max-height: 70vh;
+    width: auto;
+  }
+
+  #intro-paragraph {
+    align-self: center;
+    padding-right: 30px;
+  }
+
+/* Portfolio */
+
+
+  #cards {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex-basis: 45%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+/* Footer */
+
+  .mobile-sub-nav {
+    display: none;
+  }
+
+  .desktop-sub-nav {
+    display: initial;
+    float: right;
+    padding: 0 30px;
+  }
+
+/*--------- Desktop styles ----------*/
+
+}
+
+@media (min-width: 1024px) {
+
+  #main-nav {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
+  .card {
+    flex-basis: 30%;
+  }
+
+}
